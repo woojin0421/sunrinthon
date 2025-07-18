@@ -1,0 +1,28 @@
+.linkContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    background: linear-gradient(#D6D6D6, #444444);
+    /* background-image: url(); */
+    border-radius: 15px;
+}
+.linkName{
+    font-size: 1rem;
+    color: #fff;
+}
+.linkTitle{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .linkContainer {
+        width: 20rem;
+        height: 20rem;
+        flex-direction: col;
+        justify-content: end;
+        align-items: start;
+        padding: 1rem
+    }
+}

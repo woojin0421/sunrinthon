@@ -1,0 +1,94 @@
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+}
+.signupForm {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.signupForm > input , select{
+  height: 60px;
+  padding: 0 23px;
+  font-size: 17px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+}
+.signupForm input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.signupForm button {
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #52FD63;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.SignupForm button:hover {
+  background-color: #7ad97a;
+}
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tagsContainer label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.tagsContainer input[type="checkbox"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tagsContainer input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.tagsContainer input[type="checkbox"]:checked::after {
+  content: '✔';
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  font-size: 12px;
+  color: white;
+}
+
+.tagsContainer label:hover {
+  background-color: #e8f5e9;
+  border-color: #4CAF50;
+}
