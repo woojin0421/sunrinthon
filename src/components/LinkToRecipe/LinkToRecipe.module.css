@@ -8,13 +8,14 @@
     border-radius: 15px;
 }
 .linkName{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
 }
 .linkTitle{
     font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
+
 }
 @media (min-width: 768px) {
     .linkContainer {

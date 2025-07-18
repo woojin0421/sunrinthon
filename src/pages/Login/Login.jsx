@@ -5,7 +5,6 @@ import styles from './Login.module.css';
 import useAuthStore from '../../stores/userAuthStore';
 
 const Login = ({setAuth}) => {  
-    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const navigate = useNavigate();
@@ -25,7 +24,7 @@ const Login = ({setAuth}) => {
                 const { access, user } = response.data;
 
                  login(user, access);
-                localStorage.setItem('authToken', access);
+                localStorage.setItem('authToken', 'Bearer '+access);
                 localStorage.setItem('user', JSON.stringify(user));
                 setAuth(true);
                 navigate('/');

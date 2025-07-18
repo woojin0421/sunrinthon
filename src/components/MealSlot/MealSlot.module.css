@@ -1,0 +1,31 @@
+.mealSlot {
+  background-color: #D0FFCD;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px 0;
+  min-height: 150px;
+  transition: all 0.3s ease;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.mealSlot:hover {
+  border-color: #4CAF50;
+  background-color: #f0f9f0;
+}
+
+.mealTitle {
+  color: #333;
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.mealContent {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

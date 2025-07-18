@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header/Header.jsx'
 import Home from './pages/Home/Home.jsx'
-import My from './pages/My/My.jsx'
+import MyPage from './pages/MyPage/MyPage.jsx'
 import Login from './pages/Login/Login.jsx'
 import Signup from './pages/Signup/Signup.jsx'
-import Detail from './pages/Detail/Detail.jsx'
 import Recipe from './pages/Recipe/Recipe.jsx'
 import { Routes, Route , useLocation, useNavigate} from 'react-router-dom'
 import './global.css';
@@ -41,9 +40,8 @@ function App() {
         )}
         {auth && (
           <>
-            <Route path="/my" element={<My />} />
-            <Route path="/detail/:id" element={<Detail />} />
-            <Route path="/recipe/:id" element={<Recipe />} />
+            <Route path="/my" element={<MyPage />} />
+            <Route path="/recipe" element={<Recipe />} />
           </>
         )}
       </Routes>
